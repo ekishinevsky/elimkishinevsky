@@ -7,15 +7,105 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Floating Background Elements -->
-    <div class="floating-elements">
-        <div class="floating-orb orb-1"></div>
-        <div class="floating-orb orb-2"></div>
-        <div class="floating-orb orb-3"></div>
-        <div class="grid-overlay"></div>
+    <!-- Mouse Rocket Effect -->
+    <div class="mouse-rocket">
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 2C12 2 8 6 8 12C8 14.5 9 17 12 20C15 17 16 14.5 16 12C16 6 12 2 12 2Z" fill="rgba(255,255,255,0.9)"/>
+            <path d="M12 20L10 23L12 22L14 23L12 20Z" fill="#ff6b35"/>
+            <path d="M8 12C6 12 5 14 5 14L8 13" fill="rgba(200,200,200,0.8)"/>
+            <path d="M16 12C18 12 19 14 19 14L16 13" fill="rgba(200,200,200,0.8)"/>
+            <circle cx="12" cy="9" r="2" fill="rgba(100,200,255,0.8)"/>
+        </svg>
+        <div class="rocket-trail"></div>
+    </div>
+
+    <!-- Stars Background -->
+    <div class="stars-container">
+        <div class="stars stars-1"></div>
+        <div class="stars stars-2"></div>
+        <div class="stars stars-3"></div>
+    </div>
+
+    <!-- Shooting Stars -->
+    <div class="shooting-stars">
+        <div class="shooting-star shooting-star-1"></div>
+        <div class="shooting-star shooting-star-2"></div>
+        <div class="shooting-star shooting-star-3"></div>
+        <div class="shooting-star shooting-star-4"></div>
+        <div class="shooting-star shooting-star-5"></div>
+    </div>
+
+    <!-- Satellites -->
+    <div class="satellites">
+        <div class="satellite satellite-1">
+            <div class="satellite-body"></div>
+            <div class="satellite-panel satellite-panel-left"></div>
+            <div class="satellite-panel satellite-panel-right"></div>
+        </div>
+        <div class="satellite satellite-2">
+            <div class="satellite-body"></div>
+            <div class="satellite-panel satellite-panel-left"></div>
+            <div class="satellite-panel satellite-panel-right"></div>
+        </div>
+        <div class="satellite satellite-3">
+            <div class="satellite-body"></div>
+        </div>
+    </div>
+
+    <!-- Scroll-Connected Constellation -->
+    <svg class="scroll-constellation" viewBox="0 0 100 500" preserveAspectRatio="none">
+        <!-- Star points -->
+        <circle class="const-star" cx="20" cy="10" r="2"/>
+        <circle class="const-star" cx="50" cy="30" r="2.5"/>
+        <circle class="const-star" cx="80" cy="20" r="2"/>
+        <circle class="const-star" cx="35" cy="70" r="2"/>
+        <circle class="const-star" cx="70" cy="60" r="2.5"/>
+        <circle class="const-star" cx="15" cy="100" r="2"/>
+        <circle class="const-star" cx="55" cy="110" r="2"/>
+        <circle class="const-star" cx="85" cy="95" r="2.5"/>
+        <circle class="const-star" cx="30" cy="150" r="2"/>
+        <circle class="const-star" cx="65" cy="140" r="2"/>
+        <circle class="const-star" cx="45" cy="180" r="2.5"/>
+        <circle class="const-star" cx="80" cy="170" r="2"/>
+        <circle class="const-star" cx="20" cy="210" r="2"/>
+        <circle class="const-star" cx="60" cy="220" r="2.5"/>
+        <circle class="const-star" cx="40" cy="260" r="2"/>
+        <circle class="const-star" cx="75" cy="250" r="2"/>
+        <circle class="const-star" cx="25" cy="300" r="2.5"/>
+        <circle class="const-star" cx="55" cy="290" r="2"/>
+        <circle class="const-star" cx="85" cy="320" r="2"/>
+        <circle class="const-star" cx="35" cy="350" r="2.5"/>
+        <circle class="const-star" cx="70" cy="360" r="2"/>
+        <circle class="const-star" cx="50" cy="400" r="2.5"/>
+
+        <!-- Connection lines -->
+        <path class="const-line" d="M20,10 L50,30 L80,20"/>
+        <path class="const-line" d="M50,30 L35,70 L70,60 L80,20"/>
+        <path class="const-line" d="M35,70 L15,100 L55,110 L70,60"/>
+        <path class="const-line" d="M55,110 L85,95"/>
+        <path class="const-line" d="M15,100 L30,150 L65,140 L85,95"/>
+        <path class="const-line" d="M30,150 L45,180 L80,170 L65,140"/>
+        <path class="const-line" d="M45,180 L20,210 L60,220"/>
+        <path class="const-line" d="M60,220 L40,260 L75,250 L80,170"/>
+        <path class="const-line" d="M40,260 L25,300 L55,290 L75,250"/>
+        <path class="const-line" d="M25,300 L35,350 L70,360 L85,320 L55,290"/>
+        <path class="const-line" d="M35,350 L50,400 L70,360"/>
+    </svg>
+
+    <!-- Nebula Effects -->
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
+
+    <!-- Distant Galaxies -->
+    <div class="galaxies">
+        <div class="galaxy galaxy-1"></div>
+        <div class="galaxy galaxy-2"></div>
+        <div class="galaxy galaxy-3"></div>
+        <div class="galaxy galaxy-4"></div>
     </div>
 
     <!-- Navigation -->
@@ -25,6 +115,7 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -33,74 +124,65 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-content">
-            <div class="hero-badge animate-fade-up">
+            <div class="hero-badge">
                 <span class="badge-dot"></span>
                 Open to Opportunities
             </div>
-            <h1 class="hero-title animate-fade-up delay-1">
-                <span class="gradient-text">Eli Kishinevsky</span>
-            </h1>
-            <p class="hero-subtitle animate-fade-up delay-2">
-                Supply Chain & Business Analytics Student
-            </p>
-            <p class="hero-school animate-fade-up delay-3">
-                University of San Diego | Graduating May 2026
-            </p>
-            <div class="hero-cta animate-fade-up delay-4">
-                <a href="#projects" class="btn btn-primary">
-                    <span>View Projects</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                    </svg>
-                </a>
+            <h1 class="hero-title">Eli Kishinevsky</h1>
+            <p class="hero-subtitle">Supply Chain & Business Analytics Student</p>
+            <p class="hero-school">University of San Diego | Graduating May 2026</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
         </div>
+
         <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
+            <div class="scroll-arrow"></div>
             <span>Scroll to explore</span>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="stats" id="stats">
+    <section class="section section-stats" id="stats">
         <div class="container">
+            <div class="section-header section-header-center">
+                <span class="section-tag">Highlights</span>
+            </div>
             <div class="stats-grid">
-                <div class="stat-card animate-on-scroll">
-                    <div class="stat-number" data-count="3000">0</div>
-                    <div class="stat-suffix">+</div>
+                <a href="https://www.happymilerc.com/" target="_blank" class="stat-card stat-card-link">
+                    <div class="stat-number">3,000+</div>
                     <p class="stat-label">Run Club Members</p>
-                </div>
-                <div class="stat-card animate-on-scroll">
-                    <div class="stat-number" data-count="71">0</div>
-                    <div class="stat-suffix">K+</div>
+                    <span class="card-link-icon">↗</span>
+                </a>
+                <div class="stat-card stat-card-modal" data-modal="insights-modal">
+                    <div class="stat-number">71K+</div>
                     <p class="stat-label">Social Followers</p>
+                    <span class="card-link-icon">⤢</span>
                 </div>
-                <div class="stat-card animate-on-scroll">
-                    <div class="stat-number" data-count="25">0</div>
-                    <div class="stat-suffix">M+</div>
+                <div class="stat-card stat-card-modal" data-modal="insights-modal">
+                    <div class="stat-number">25M+</div>
                     <p class="stat-label">Accounts Reached</p>
+                    <span class="card-link-icon">⤢</span>
                 </div>
-                <div class="stat-card animate-on-scroll">
-                    <div class="stat-number" data-count="20">0</div>
-                    <div class="stat-suffix">+</div>
+                <a href="https://www.google.com/maps/d/u/0/edit?mid=1Askrz0HcnfMduiKDwsR0fcMlHAxlr2M&usp=sharing" target="_blank" class="stat-card stat-card-link">
+                    <div class="stat-number">25+</div>
                     <p class="stat-label">Countries Visited</p>
-                </div>
+                    <span class="card-link-icon">↗</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section class="section section-about" id="about">
         <div class="container">
-            <div class="section-header animate-on-scroll">
+            <div class="section-header">
                 <span class="section-tag">About</span>
-                <h2 class="section-title">Building communities & analyzing data</h2>
+                <h2 class="section-title">Building communities<br>& analyzing data</h2>
             </div>
             <div class="about-content">
-                <div class="about-text animate-on-scroll">
+                <div class="about-text">
                     <p>
                         I'm a Supply Chain and Business Analytics student at the University of San Diego,
                         passionate about leveraging data-driven insights to solve complex business challenges.
@@ -114,17 +196,17 @@
                         and entrepreneurial mindset to drive meaningful impact.
                     </p>
                 </div>
-                <div class="about-skills animate-on-scroll">
+                <div class="about-skills">
                     <h3>Core Competencies</h3>
                     <div class="skills-grid">
-                        <div class="skill-tag">Supply Chain</div>
-                        <div class="skill-tag">Data Analytics</div>
-                        <div class="skill-tag">Python</div>
-                        <div class="skill-tag">SQL</div>
-                        <div class="skill-tag">Community Building</div>
-                        <div class="skill-tag">Marketing</div>
-                        <div class="skill-tag">Product Development</div>
-                        <div class="skill-tag">Risk Management</div>
+                        <span class="skill-tag">Supply Chain</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Community Building</span>
+                        <span class="skill-tag">Marketing</span>
+                        <span class="skill-tag">Product Development</span>
+                        <span class="skill-tag">Risk Management</span>
                     </div>
                 </div>
             </div>
@@ -132,131 +214,170 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects" id="projects">
+    <section class="section section-projects" id="projects">
         <div class="container">
-            <div class="section-header animate-on-scroll">
+            <div class="section-header">
                 <span class="section-tag">Projects</span>
                 <h2 class="section-title">Featured Work</h2>
             </div>
+
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card animate-on-scroll">
+                <a href="https://www.happymilerc.com/" target="_blank" class="project-card project-card-link project-card-featured">
                     <div class="project-number">01</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Happy Mile Run Club</h3>
-                        <p class="project-description">
-                            Built a thriving 3,000+ member running community from the ground up.
-                            Managing all aspects including logistics, brand partnerships, merchandise operations,
-                            and community engagement strategies.
-                        </p>
-                        <div class="project-tags">
-                            <span>Community</span>
-                            <span>Logistics</span>
-                            <span>Partnerships</span>
-                            <span>E-commerce</span>
-                        </div>
+                    <h3 class="project-title">Happy Mile Run Club</h3>
+                    <p class="project-description">
+                        Built a thriving 3,000+ member running community from the ground up.
+                        Managing logistics, brand partnerships, merchandise, and community engagement.
+                    </p>
+                    <div class="project-tags">
+                        <span>Community</span>
+                        <span>Logistics</span>
+                        <span>Partnerships</span>
                     </div>
-                    <div class="project-visual">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                            </svg>
-                        </div>
+                    <div class="visit-site-btn">
+                        <span>Visit Site</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 2 -->
-                <div class="project-card animate-on-scroll">
+                <a href="https://www.joinclubpack.com/" target="_blank" class="project-card project-card-link project-card-featured">
                     <div class="project-number">02</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Combatrium</h3>
-                        <p class="project-description">
-                            Founded and scaled a combat sports media brand to 71K+ followers in under one year.
-                            Secured athlete and brand partnerships, developed content strategies, and executed
-                            a successful exit.
-                        </p>
-                        <div class="project-tags">
-                            <span>Social Media</span>
-                            <span>Negotiation</span>
-                            <span>Marketing</span>
-                            <span>Exit Strategy</span>
-                        </div>
+                    <h3 class="project-title">ClubPack (SaaS)</h3>
+                    <p class="project-description">
+                        Co-founded a management platform for clubs and organizations.
+                        Developed features and currently working on marketing, outreach, onboarding, and customer relations.
+                    </p>
+                    <div class="project-tags">
+                        <span>SaaS</span>
+                        <span>SQL</span>
+                        <span>Product</span>
                     </div>
-                    <div class="project-visual">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                            </svg>
-                        </div>
+                    <div class="visit-site-btn">
+                        <span>Visit Site</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 3 -->
-                <div class="project-card animate-on-scroll">
+                <div class="project-card project-card-modal" data-modal="insights-modal">
                     <div class="project-number">03</div>
-                    <div class="project-content">
-                        <h3 class="project-title">ClubPack (SaaS)</h3>
-                        <p class="project-description">
-                            Co-built a member management platform designed for clubs and organizations.
-                            Developed features for content streamlining, membership tracking, and
-                            community engagement analytics.
-                        </p>
-                        <div class="project-tags">
-                            <span>SaaS</span>
-                            <span>SQL</span>
-                            <span>Web Development</span>
-                            <span>Product</span>
-                        </div>
+                    <h3 class="project-title">Combatrium</h3>
+                    <p class="project-description">
+                        Founded and scaled a combat sports media brand to 71K+ followers in under one year.
+                        Secured partnerships and executed a successful exit.
+                    </p>
+                    <div class="project-tags">
+                        <span>Social Media</span>
+                        <span>Marketing</span>
+                        <span>Exit Strategy</span>
                     </div>
-                    <div class="project-visual">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                        </div>
-                    </div>
+                    <span class="card-link-icon">⤢</span>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card animate-on-scroll">
+                <div class="project-card">
                     <div class="project-number">04</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Independent Trading</h3>
-                        <p class="project-description">
-                            Developed and executed futures and cryptocurrency trading strategies using
-                            data-driven experimentation and quantitative analysis. Applied Python for
-                            backtesting and risk management.
-                        </p>
-                        <div class="project-tags">
-                            <span>Markets</span>
-                            <span>Quantitative Analysis</span>
-                            <span>Python</span>
-                            <span>Risk Management</span>
-                        </div>
-                    </div>
-                    <div class="project-visual">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                            </svg>
-                        </div>
+                    <h3 class="project-title">Independent Trading</h3>
+                    <p class="project-description">
+                        Developed futures and cryptocurrency trading strategies using
+                        quantitative analysis and Python for backtesting.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Analysis</span>
+                        <span>Risk Management</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- Experience Section -->
+    <section class="section section-experience" id="experience">
         <div class="container">
-            <div class="contact-wrapper animate-on-scroll">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Professional Background</h2>
+            </div>
+
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-company">The Reshoring Institute</div>
+                        <div class="experience-badge current">Current</div>
+                    </div>
+                    <div class="experience-role">Research & Consulting Intern</div>
+                    <p class="experience-description">
+                        Researching and consulting intern with a focus on the semiconductor industry.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-company">Alex Kushner General INC.</div>
+                    </div>
+                    <div class="experience-role">Construction Management Intern</div>
+                    <p class="experience-description">
+                        Worked across 4 different construction sites managing company equipment and labor operations.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-company">TrashCan LLC.</div>
+                    </div>
+                    <div class="experience-role">Business Development Manager</div>
+                    <p class="experience-description">
+                        Managed up to $5,000 in company finances for procurement and business development initiatives.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-company">Marriott Marquis</div>
+                    </div>
+                    <div class="experience-role">Valet & Bellperson</div>
+                    <p class="experience-description">
+                        Provided professional guest services including vehicle handling, luggage assistance, and personalized support to ensure a seamless hospitality experience.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-company">Colibri LLC.</div>
+                    </div>
+                    <div class="experience-role">Customer Service Representative</div>
+                    <p class="experience-description">
+                        Managed customer relations for an AirBnB property, maintaining 5-star reviews and top 1% host status.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-company">Nike Soccer Camp & Presidio Hill School</div>
+                    </div>
+                    <div class="experience-role">Soccer & Futsal Coach</div>
+                    <p class="experience-description">
+                        Co-Head coached a middle school Futsal Team, creating training regiments, drills, practices, and monitored games.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
                 <div class="section-header">
                     <span class="section-tag">Contact</span>
                     <h2 class="section-title">Let's Connect</h2>
                 </div>
                 <p class="contact-text">
-                    I'm always open to discussing new opportunities, collaborations, or just connecting
-                    with like-minded individuals.
+                    I'm always open to discussing new opportunities, collaborations,
+                    or just connecting with like-minded individuals.
                 </p>
                 <div class="contact-links">
                     <a href="mailto:ekishinevsky@sandiego.edu" class="contact-link">
@@ -269,11 +390,8 @@
                             <span class="contact-label">Email</span>
                             <span class="contact-value">ekishinevsky@sandiego.edu</span>
                         </div>
-                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
                     </a>
-                    <a href="https://linkedin.com/in/ekishinevsky" target="_blank" rel="noopener" class="contact-link">
+                    <a href="https://linkedin.com/in/ekishinevsky" target="_blank" class="contact-link">
                         <div class="contact-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
@@ -283,11 +401,8 @@
                             <span class="contact-label">LinkedIn</span>
                             <span class="contact-value">Connect with me</span>
                         </div>
-                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
                     </a>
-                    <a href="https://github.com/ekishinevsky" target="_blank" rel="noopener" class="contact-link">
+                    <a href="https://github.com/ekishinevsky" target="_blank" class="contact-link">
                         <div class="contact-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
@@ -297,9 +412,6 @@
                             <span class="contact-label">GitHub</span>
                             <span class="contact-value">View my code</span>
                         </div>
-                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
                     </a>
                 </div>
             </div>
@@ -309,11 +421,23 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Eli Kishinevsky. All rights reserved.</p>
-            </div>
+            <p>&copy; 2026 Eli Kishinevsky. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div class="modal-overlay" id="insights-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-image-container">
+                <img src="assets/proof_of_account_reached.png" alt="Reel Insights - 26.7M Views, 2.8M Likes">
+            </div>
+            <div class="modal-caption">
+                <h3>Combatrium Reel Insights</h3>
+                <p>26.7M plays, 2.8M likes, 137K shares on a single post</p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
